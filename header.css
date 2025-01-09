@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: roboto, poppins;
+  }
+  
+  body {
+    background-color: black;
+    color: white;
+    box-sizing: border-box;
+  }
+  
+  .nav-bar {
+    justify-content: space-around;
+    box-sizing: border-box;
+    padding: 7px;
+    position: relative;
+  }
+
+  .hamburger{
+    display: none;
+  }
+
+  .close{
+    display: none;
+  }
+  
+  .search-bar-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .search-bar {
+    justify-content: center;
+    align-items: center;
+    background-color: #121212;
+    width: 40vw;
+    padding: 5px;
+    border-radius: 35px;
+  }
+  
+  .search-bar .search-svg {
+    cursor: pointer;
+  }
+  
+  .search-bar .file-svg {
+    cursor: pointer;
+  }
+  
+  .search-bar .search-text {
+    border: none;
+    width: 400px;
+    padding: 8px;
+    background-color: #121212;
+    font-size: 17px;
+  }
+  
+  .search-bar img {
+    width: 32px;
+  }
+  
+  /* .header-buttons .sign-up {
+    width: 80px;
+    background-color: black;
+    color: gray;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    padding: 10px 20px;
+    font-weight: 600;
+    cursor: pointer;
+  } */
+  
+  /* .sign-up:hover {
+    font-size: 1.1rem;
+    font-weight: 800;
+    color: white;
+  }
+  
+  .header-buttons .log-in {
+    width: 70px;
+    background-color: white;
+    color: black;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 35px;
+    padding: 5px 15px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  
+  .log-in:hover {
+    font-size: 1.1rem;
+    font-weight: 800;
+  } */
+  
+  .logo {
+    justify-content: center;
+    align-items: center;
+    margin: 0px 0px 0px 20px;
+    cursor: pointer;
+    padding: 7px;
+  }
+  

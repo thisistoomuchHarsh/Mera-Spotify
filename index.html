@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/Images/favicon.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="utitlity.css" />
+    <link rel="stylesheet" href="body.css" />
+    <title>Mera-Spotify</title>
+  </head>
+  <body>
+    <header>
+      <div class="nav-bar flex">
+        <div class="hamburger invert">
+          <img src="/Images/hamburger.svg" alt="" />
+        </div>
+        <div class="logo flex">
+          <img
+            class="logo-svg invert"
+            src="/Images/logo.svg"
+            alt="Spotify-Logo"
+          />
+        </div>
+        <div class="search-bar-main flex">
+          <div class="search-bar flex">
+            <img
+              class="search-svg invert"
+              src="/Images/search.svg"
+              alt="Search-Button"
+            />
+            <input
+              class="search-text"
+              type="text"
+              placeholder="What do you want to play ?"
+            />
+            <img class="file-svg invert" src="/Images/file.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="main flex">
+        <div class="left bg-grey">
+          <div class="close invert">
+            <img src="/Images/close.svg" alt="" />
+          </div>
+          <div class="library flex">
+            <div class="library-1 flex">
+              <img
+                class="invert"
+                src="/Images/library.svg"
+                alt="Library-Logo"
+              />
+              <p>My Library</p>
+            </div>
+          </div>
+          <div class="songsList">
+            <ul></ul>
+          </div>
+          <div class="legal-main">
+            <div class="legal">
+              <div>Legal</div>
+              <div>Safety & Privacy Center</div>
+              <div>Privacy Policy</div>
+              <div>Cookies</div>
+              <div>About Ads</div>
+              <div>Accessibility</div>
+            </div>
+          </div>
+          <div class="language">
+            <button class="language-box">
+              <img src="/Images/language.svg" alt="langauge" />
+              English
+            </button>
+          </div>
+        </div>
+        <div class="right bg-grey">
+          <div class="heading">
+            <h1>My Albums</h1>
+          </div>
+          <div class="your-albums"></div>
+          <div class="playbar">
+            <div class="seekbar">
+              <div class="circle"></div>
+            </div>
+            <div class="song-controller">
+              <div class="song-info"></div>
+              <div class="play-buttons">
+                <img
+                  id="previous"
+                  class="invert"
+                  src="/Images/prevsong.svg"
+                  alt="Previous Song Button"
+                />
+                <img
+                  id="play"
+                  class="invert"
+                  src="/Images/play.svg"
+                  alt="Play Button"
+                />
+                <img
+                  id="next"
+                  class="invert"
+                  src="/Images/nextsong.svg"
+                  alt="Next Song Button"
+                />
+              </div>
+              <div class="song-time"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

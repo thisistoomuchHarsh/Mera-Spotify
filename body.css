@@ -1,0 +1,295 @@
+.main {
+  gap: 5px;
+}
+.left {
+  width: 30vw;
+  padding: 5px 15px;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.library {
+  justify-content: center;
+  align-items: center;
+}
+
+.library-1 p {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.library-1 {
+  margin-top: 15px;
+  gap: 10px;
+  color: white;
+}
+
+.library-1 img {
+  width: 25px;
+  color: gray;
+}
+
+
+
+.legal-main .legal {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.legal div {
+  padding: 5px;
+  font-size: 12px;
+}
+
+.language {
+  margin: 5px 0px;
+}
+
+.language .language-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 10px;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 30px;
+  background-color: #121212;
+  border: 0.5px solid white;
+  color: white;
+  cursor: pointer;
+
+}
+
+.language-box img {
+  width: 15px;
+  filter: invert(1);
+}
+
+.right {
+  width: 70vw;
+  padding: 15px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  position: relative;
+}
+
+.your-albums {
+  margin-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 10px;
+  max-height: 60vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.cards {
+  width: 150px;
+  background-color: rgba(128, 128, 128, 0.095);
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.cards p {
+  margin: 0px;
+}
+
+.cards img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.playbar {
+  display: flex;
+  position: absolute;
+  bottom: 10px;
+  width: 65vw;
+  background-color: rgba(128, 128, 128, 0.2);
+  border-radius: 40px;
+  padding: 12px;
+  justify-content: center;
+  align-items: center;
+}
+
+.play-buttons {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.play-buttons img{
+  cursor: pointer;
+}
+
+.songsList {
+  height: 400px;
+  margin: 10px 0px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.songsList ul li {
+  list-style-type: decimal;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  padding: 12px 0;
+  border: 1px solid rgba(146, 143, 143, 0.491);
+  margin: 5px 0;
+  padding: 13px;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #121212;
+  word-break: break-all;
+}
+
+.seekbar{
+  height: 3px;
+  width: 95%;
+  border: 1px solid white;
+  position: absolute;
+  bottom: 0;
+  border-radius: 5px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.circle{
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+  bottom: -3px;
+  left: -1%;
+}
+
+.song-controller{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 15px 0px 5px;
+}
+
+.song-info{
+  width: 30%;
+  font-size: 14px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+
+.song-time{
+  width: 20%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 14px;
+}
+
+@media (max-width:800px) {
+  .left{
+    position: absolute;
+    left: -130%;
+    z-index: 1;
+    width: 350px;
+  }
+
+  .close{
+    position: absolute;
+    right: 12px;
+    top: 24px;
+    display: block;
+  }
+
+  .right{
+    width: 100vw;
+    height: 90vh;
+  }
+
+  .playbar{
+    width: 85vw;
+  }
+
+  .seekbar{
+    width: 80%;
+  }
+
+  .hamburger{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hamburger img{
+    width: 30px;
+  }
+
+  .song-info{
+    position: absolute;
+    top: -38px;
+    width: auto;
+  }
+
+  .songsList{
+    height: 60vh;
+  }
+
+}
+
+
+@media (max-width:650px) {
+  .search-bar-main{
+    position: absolute;
+    right: 120%;
+  }
+
+  .song-time{
+    width: 30%;
+  }
+
+  .your-albums{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  .cards{
+    width: 250px;
+  }
+
+  .play-buttons img{
+    width: 35px;
+  }
+
+  .song-time{
+    font-size: 19px;
+  }
+}
+
+@media (max-width:450px) {
+  .your-albums{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cards{
+    width: 250px;
+  }
+}
+
